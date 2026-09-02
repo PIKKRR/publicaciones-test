@@ -454,14 +454,15 @@
             border-radius: inherit;
         }
 
-        .image-frame img {
+        .image-frame svg {
             width: 100%;
+            height: auto;
+            display: block;
             aspect-ratio: 16 / 8.3;
-            object-fit: cover;
             transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
 
-        .image-frame:hover img {
+        .image-frame:hover svg {
             transform: scale(1.018);
         }
 
@@ -808,7 +809,7 @@
             .image-frame {
                 border-radius: 20px;
             }
-            .image-frame img {
+            .image-frame svg {
                 aspect-ratio: 1 / 1;
             }
             .article-layout {
@@ -936,11 +937,108 @@
             </div>
         </section>
 
-        <!-- IMAGEN PRINCIPAL -->
+        <!-- IMAGEN PRINCIPAL (EMBEBIDA) -->
         <section class="hero-visual" aria-label="Imagen principal">
             <figure>
                 <div class="image-frame">
-                    <img src="imagen-ciberseguridad.svg" alt="Ilustración sobre ciberseguridad y ataques de phishing" loading="eager">
+                    <svg viewBox="0 0 1600 830" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fondo -->
+                        <rect width="1600" height="830" rx="28" fill="url(#bgGrad)"/>
+
+                        <!-- Patrón de fondo sutil -->
+                        <g opacity="0.06">
+                            <circle cx="100" cy="100" r="150" fill="white"/>
+                            <circle cx="1500" cy="700" r="200" fill="white"/>
+                            <circle cx="800" cy="50" r="100" fill="white"/>
+                            <circle cx="200" cy="750" r="120" fill="white"/>
+                            <circle cx="1400" cy="150" r="80" fill="white"/>
+                        </g>
+
+                        <!-- Líneas de red / seguridad -->
+                        <g opacity="0.12" stroke="white" stroke-width="1">
+                            <line x1="300" y1="0" x2="800" y2="830"/>
+                            <line x1="800" y1="0" x2="1300" y2="830"/>
+                            <line x1="0" y1="300" x2="1600" y2="530"/>
+                            <line x1="0" y1="530" x2="1600" y2="300"/>
+                            <circle cx="800" cy="415" r="200" fill="none" stroke-dasharray="8 8"/>
+                            <circle cx="800" cy="415" r="350" fill="none" stroke-dasharray="4 12"/>
+                        </g>
+
+                        <!-- Escudo central -->
+                        <g transform="translate(800, 415)">
+                            <g filter="url(#shadow)">
+                                <path d="M0 -180 L160 -100 L160 40 C160 160 80 240 0 280 C-80 240 -160 160 -160 40 L-160 -100 L0 -180Z" fill="url(#shieldGrad)" stroke="url(#shieldStroke)" stroke-width="3"/>
+                            </g>
+
+                            <!-- Candado -->
+                            <g transform="translate(0, -30)">
+                                <rect x="-55" y="-30" width="110" height="80" rx="12" fill="#090a0f" stroke="white" stroke-width="2.5" opacity="0.9"/>
+                                <path d="M-35 -30 L-35 -55 C-35 -75 -15 -85 0 -85 C15 -85 35 -75 35 -55 L35 -30" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                                <circle cx="0" cy="5" r="12" fill="none" stroke="white" stroke-width="2.5"/>
+                                <path d="M0 5 L0 18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Checkmark -->
+                            <g transform="translate(0, 60)">
+                                <circle cx="0" cy="0" r="45" fill="none" stroke="#8b5cf6" stroke-width="4" opacity="0.4"/>
+                                <path d="M-25 0 L-8 18 L30 -22" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+                            </g>
+                        </g>
+
+                        <!-- Elementos decorativos de código / binario -->
+                        <g font-family="monospace" font-size="14" fill="white" opacity="0.12">
+                            <text x="120" y="200">01001100</text>
+                            <text x="1300" y="650">01110011</text>
+                            <text x="100" y="600">01001000</text>
+                            <text x="1350" y="200">01100001</text>
+                            <text x="700" y="780">01100101</text>
+                            <text x="850" y="80">01101100</text>
+                        </g>
+
+                        <!-- Texto de seguridad -->
+                        <g font-family="system-ui, sans-serif" font-weight="700" fill="white" opacity="0.08">
+                            <text x="50" y="780" font-size="120" letter-spacing="4">SECURE</text>
+                            <text x="1150" y="100" font-size="120" letter-spacing="4">PHISHING</text>
+                        </g>
+
+                        <!-- Borde sutil -->
+                        <rect x="2" y="2" width="1596" height="826" rx="26" stroke="white" stroke-opacity="0.05" stroke-width="2" fill="none"/>
+
+                        <!-- Definiciones -->
+                        <defs>
+                            <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1a1a2e"/>
+                                <stop offset="50%" stop-color="#16213e"/>
+                                <stop offset="100%" stop-color="#0f3460"/>
+                            </linearGradient>
+                            <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#635bff"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                            <linearGradient id="shieldStroke" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#8179ff"/>
+                                <stop offset="100%" stop-color="#a78bfa"/>
+                            </linearGradient>
+                            <filter id="shadow" x="-200" y="-240" width="400" height="560">
+                                <feDropShadow dx="0" dy="8" stdDeviation="30" flood-color="#635bff" flood-opacity="0.25"/>
+                            </filter>
+                            <filter id="glow" x="-50" y="-50" width="100" height="100">
+                                <feGaussianBlur stdDeviation="8" result="blur"/>
+                                <feFlood flood-color="#8b5cf6" flood-opacity="0.6" result="color"/>
+                                <feComposite in="color" in2="blur" operator="in" result="glow"/>
+                                <feMerge>
+                                    <feMergeNode in="glow"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Etiqueta informativa en la esquina -->
+                        <g transform="translate(1450, 770)" opacity="0.15">
+                            <rect x="0" y="0" width="130" height="28" rx="14" fill="white"/>
+                            <text x="65" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1a1a2e" text-anchor="middle">SEGURIDAD</text>
+                        </g>
+                    </svg>
                 </div>
                 <figcaption>Los atacantes utilizan mensajes que simulan proceder de los equipos de seguridad de las organizaciones.</figcaption>
             </figure>
