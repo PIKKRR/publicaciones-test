@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Investigadores han detectado una campaña de phishing que utiliza falsas alertas de seguridad para engañar a empleados y obtener sus credenciales corporativas.">
+    <title>
+        Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas |
+        CyberSecure News
+    </title>
 
-    <meta name="author" content="Clara Fernández">
+    <meta
+        name="description"
+        content="Investigadores han detectado una campaña de phishing que utiliza falsas alertas de seguridad para engañar a empleados y obtener sus credenciales corporativas."
+    >
 
-    <!-- Campos explícitos para probar el extractor -->
-    <meta name="title"
-          content="Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas">
+    <meta name="author" content="Antonio Casamitjana">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Metadata explícita -->
+    <meta
+        name="title"
+        content="Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas"
+    >
 
     <meta name="type" content="news">
-
     <meta name="source" content="CyberSecure News">
+
+    <!-- Navegador / móvil -->
+    <meta name="theme-color" content="#090a0f">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
 
-    <meta property="og:title"
-          content="Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas">
+    <meta
+        property="og:title"
+        content="Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas"
+    >
 
-    <meta property="og:description"
-          content="Investigadores han detectado una campaña de phishing que utiliza falsas alertas de seguridad para engañar a empleados y obtener sus credenciales corporativas.">
+    <meta
+        property="og:description"
+        content="Investigadores han detectado una campaña de phishing que utiliza falsas alertas de seguridad para engañar a empleados y obtener sus credenciales corporativas."
+    >
 
     <meta property="og:site_name" content="CyberSecure News">
 
-    <meta property="og:url"
-          content="https://TU_USUARIO.github.io/publicaciones-test/noticia-ciberseguridad.html">
+    <meta
+        property="og:url"
+        content="https://pikkr.github.io/publicaciones-test/noticia-ciberseguridad.html"
+    >
 
-    <meta property="og:image"
-          content="https://TU_USUARIO.github.io/publicaciones-test/imagen-ciberseguridad.svg">
+    <meta
+        property="og:image"
+        content="https://pikkr.github.io/publicaciones-test/imagen-ciberseguridad.svg"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Ilustración sobre ciberseguridad y ataques de phishing"
+    >
 
     <!-- Datos del artículo -->
     <meta property="article:section" content="Ciberseguridad">
+    <meta property="article:author" content="Antonio Casamitjana">
 
-    <meta property="article:author" content="Clara Fernández">
+    <meta
+        property="article:published_time"
+        content="2026-09-02T08:45:00+02:00"
+    >
 
-    <meta property="article:published_time"
-          content="2026-09-02T08:45:00+02:00">
+    <meta
+        property="article:modified_time"
+        content="2026-09-02T09:20:00+02:00"
+    >
 
-    <meta property="article:modified_time"
-          content="2026-09-02T09:20:00+02:00">
+    <!-- Canonical -->
+    <link
+        rel="canonical"
+        href="https://pikkr.github.io/publicaciones-test/noticia-ciberseguridad.html"
+    >
 
-    <!-- JSON-LD / Schema.org -->
+    <!-- =========================================================
+         JSON-LD / SCHEMA.ORG
+    ========================================================== -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -57,7 +95,7 @@
         "dateModified": "2026-09-02T09:20:00+02:00",
         "author": {
             "@type": "Person",
-            "name": "Clara Fernández"
+            "name": "Antonio Casamitjana"
         },
         "publisher": {
             "@type": "Organization",
@@ -74,202 +112,2240 @@
     }
     </script>
 
+
+    <!-- =========================================================
+         ESTILOS
+    ========================================================== -->
+
     <style>
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --bg: #f6f7fa;
+            --bg-secondary: #eef0f4;
+
+            --surface: rgba(255, 255, 255, 0.78);
+            --surface-solid: #ffffff;
+            --surface-soft: #f0f2f6;
+
+            --text: #101217;
+            --text-secondary: #505761;
+            --text-muted: #858c96;
+
+            --border: rgba(16, 18, 23, 0.09);
+
+            --accent: #635bff;
+            --accent-dark: #5148e8;
+            --accent-purple: #8b5cf6;
+
+            --accent-soft: rgba(99, 91, 255, 0.10);
+
+            --shadow-sm:
+                0 2px 8px rgba(16, 18, 23, 0.04);
+
+            --shadow-md:
+                0 16px 50px rgba(16, 18, 23, 0.08);
+
+            --shadow-lg:
+                0 35px 100px rgba(16, 18, 23, 0.14);
+
+            --radius-sm: 10px;
+            --radius-md: 18px;
+            --radius-lg: 28px;
+
+            --content-width: 760px;
+            --wide-width: 1180px;
+
+            --sans:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            --serif:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            --mono:
+                "SFMono-Regular",
+                Consolas,
+                "Liberation Mono",
+                monospace;
+
+            color-scheme: light;
+        }
+
+
+        /* =====================================================
+           DARK MODE
+        ===================================================== */
+
+        html[data-theme="dark"] {
+
+            --bg: #08090d;
+            --bg-secondary: #0d0f14;
+
+            --surface: rgba(20, 22, 29, 0.78);
+            --surface-solid: #15171d;
+            --surface-soft: #1b1e26;
+
+            --text: #f2f3f5;
+            --text-secondary: #a8adb7;
+            --text-muted: #777e89;
+
+            --border: rgba(255, 255, 255, 0.09);
+
+            --accent: #8179ff;
+            --accent-dark: #7068f0;
+            --accent-purple: #a78bfa;
+
+            --accent-soft: rgba(129, 121, 255, 0.13);
+
+            --shadow-sm:
+                0 2px 10px rgba(0, 0, 0, 0.18);
+
+            --shadow-md:
+                0 20px 70px rgba(0, 0, 0, 0.32);
+
+            --shadow-lg:
+                0 35px 110px rgba(0, 0, 0, 0.48);
+
+            color-scheme: dark;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.7;
-            color: #222;
+            margin: 0;
+            min-height: 100vh;
+
+            color: var(--text);
+
+            background:
+                radial-gradient(
+                    circle at 50% -10%,
+                    rgba(99, 91, 255, 0.12),
+                    transparent 35rem
+                ),
+                var(--bg);
+
+            font-family: var(--sans);
+
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+
+            transition:
+                background 0.3s ease,
+                color 0.3s ease;
         }
 
-        .source {
-            font-size: 14px;
-            font-weight: bold;
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+        /* =====================================================
+           SELECCIÓN
+        ===================================================== */
+
+        ::selection {
+            color: white;
+            background: var(--accent);
+        }
+
+
+        /* =====================================================
+           SCROLLBAR
+        ===================================================== */
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border: 3px solid var(--bg);
+            border-radius: 999px;
+            background: var(--text-muted);
+        }
+
+
+        /* =====================================================
+           PROGRESO DE LECTURA
+        ===================================================== */
+
+        .progress-bar {
+            position: fixed;
+            z-index: 9999;
+
+            top: 0;
+            left: 0;
+
+            width: 0;
+            height: 3px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--accent),
+                    var(--accent-purple)
+                );
+
+            box-shadow:
+                0 0 18px rgba(99, 91, 255, 0.55);
+
+            transition: width 0.08s linear;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+            position: sticky;
+            z-index: 1000;
+            top: 0;
+
+            border-bottom: 1px solid var(--border);
+
+            background:
+                color-mix(
+                    in srgb,
+                    var(--bg) 76%,
+                    transparent
+                );
+
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+
+        .nav {
+            width: min(
+                calc(100% - 40px),
+                var(--wide-width)
+            );
+
+            min-height: 70px;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           MARCA
+        ===================================================== */
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+
+            color: var(--text);
+
+            text-decoration: none;
+
+            font-size: 15px;
+            font-weight: 800;
+
+            letter-spacing: -0.035em;
+        }
+
+        .brand-mark {
+            width: 35px;
+            height: 35px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 11px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--accent),
+                    var(--accent-purple)
+                );
+
+            box-shadow:
+                0 8px 25px rgba(99, 91, 255, 0.25);
+        }
+
+        .brand-mark svg {
+            width: 18px;
+            height: 18px;
+        }
+
+
+        /* =====================================================
+           ACCIONES HEADER
+        ===================================================== */
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-button {
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+            place-items: center;
+
+            border: 1px solid var(--border);
+            border-radius: 50%;
+
+            color: var(--text-secondary);
+
+            background: var(--surface);
+
+            cursor: pointer;
+
+            transition:
+                transform 0.2s ease,
+                color 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .icon-button:hover {
+            transform: translateY(-2px);
+
+            color: var(--text);
+
+            background: var(--surface-solid);
+
+            border-color:
+                rgba(99, 91, 255, 0.25);
+        }
+
+        .icon-button:focus-visible {
+            outline: 3px solid var(--accent-soft);
+            outline-offset: 3px;
+        }
+
+        .icon-button svg {
+            width: 17px;
+            height: 17px;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            width: min(
+                calc(100% - 40px),
+                var(--content-width)
+            );
+
+            margin: auto;
+
+            padding:
+                84px
+                0
+                48px;
+        }
+
+
+        /* =====================================================
+           EYEBROW
+        ===================================================== */
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-bottom: 25px;
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
-        .type {
-            margin-top: 8px;
-            font-size: 13px;
+        .category {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding:
+                7px
+                11px;
+
+            border-radius: 999px;
+
+            color: var(--accent);
+
+            background: var(--accent-soft);
         }
+
+        .category-dot {
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+
+            background: currentColor;
+
+            box-shadow:
+                0 0 0 4px
+                rgba(99, 91, 255, 0.09);
+        }
+
+        .eyebrow-separator {
+            color: var(--text-muted);
+        }
+
+        .article-type {
+            color: var(--text-muted);
+        }
+
+
+        /* =====================================================
+           TITULAR
+        ===================================================== */
 
         h1 {
-            font-size: 42px;
-            line-height: 1.15;
+            max-width: 920px;
+
+            margin: 0;
+
+            font-size:
+                clamp(
+                    44px,
+                    7vw,
+                    78px
+                );
+
+            line-height: 0.98;
+
+            letter-spacing: -0.068em;
+
+            font-weight: 850;
         }
+
+
+        /* =====================================================
+           SUBTÍTULO
+        ===================================================== */
 
         .subtitle {
-            font-size: 21px;
-            color: #555;
+            max-width: 720px;
+
+            margin:
+                30px
+                0
+                0;
+
+            color: var(--text-secondary);
+
+            font-size:
+                clamp(
+                    19px,
+                    2.5vw,
+                    24px
+                );
+
+            line-height: 1.48;
+
+            letter-spacing: -0.025em;
         }
 
-        .metadata {
-            color: #666;
+
+        /* =====================================================
+           METADATA
+        ===================================================== */
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            gap: 18px;
+
+            margin-top: 34px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+
+            gap: 11px;
+        }
+
+        .author-avatar {
+            width: 42px;
+            height: 42px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111318,
+                    #777d89
+                );
+
+            font-size: 12px;
+            font-weight: 800;
+
+            box-shadow:
+                0 5px 18px
+                rgba(0, 0, 0, 0.14);
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+
+            gap: 2px;
+        }
+
+        .author-name {
             font-size: 14px;
-            margin: 25px 0;
+            font-weight: 750;
+        }
+
+        .author-role {
+            color: var(--text-muted);
+
+            font-size: 12px;
+        }
+
+        .meta-divider {
+            width: 1px;
+            height: 28px;
+
+            background: var(--border);
+        }
+
+        .published {
+            display: flex;
+            flex-direction: column;
+
+            gap: 2px;
+
+            color: var(--text-muted);
+
+            font-size: 12px;
+        }
+
+        .published strong {
+            color: var(--text-secondary);
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .reading-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            margin-left: auto;
+
+            padding:
+                8px
+                12px;
+
+            border: 1px solid var(--border);
+            border-radius: 999px;
+
+            color: var(--text-secondary);
+
+            background: var(--surface);
+
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        .reading-time svg {
+            width: 14px;
+            height: 14px;
+        }
+
+
+        /* =====================================================
+           HERO IMAGE
+        ===================================================== */
+
+        .hero-visual {
+            width: min(
+                calc(100% - 40px),
+                var(--wide-width)
+            );
+
+            margin: 28px auto 0;
         }
 
         figure {
-            margin: 30px 0;
+            margin: 0;
         }
 
-        figure img {
+        .image-frame {
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: var(--radius-lg);
+
+            background: var(--surface-soft);
+
+            box-shadow: var(--shadow-lg);
+
+            isolation: isolate;
+        }
+
+        .image-frame::before {
+            content: "";
+
+            position: absolute;
+            z-index: 2;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(255,255,255,0.06),
+                    transparent 35%
+                );
+        }
+
+        .image-frame::after {
+            content: "";
+
+            position: absolute;
+            z-index: 3;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            border: 1px solid rgba(255,255,255,0.14);
+
+            border-radius: inherit;
+        }
+
+        .image-frame img {
             width: 100%;
-            height: auto;
+
+            aspect-ratio: 16 / 8.3;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.9s
+                cubic-bezier(.2,.8,.2,1);
+        }
+
+        .image-frame:hover img {
+            transform: scale(1.018);
         }
 
         figcaption {
-            font-size: 13px;
-            color: #666;
+            width: min(
+                calc(100% - 8px),
+                850px
+            );
+
+            margin:
+                13px
+                auto
+                0;
+
+            color: var(--text-muted);
+
+            font-size: 12px;
+
+            line-height: 1.55;
         }
+
+
+        /* =====================================================
+           LAYOUT ARTÍCULO
+        ===================================================== */
+
+        .article-layout {
+            width: min(
+                calc(100% - 40px),
+                var(--wide-width)
+            );
+
+            margin:
+                72px
+                auto
+                0;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(
+                    0,
+                    var(--content-width)
+                );
+
+            justify-content: center;
+        }
+
+
+        /* =====================================================
+           CONTENIDO
+        ===================================================== */
+
+        .content {
+            font-family: var(--serif);
+
+            font-size:
+                clamp(
+                    18px,
+                    2vw,
+                    20px
+                );
+
+            line-height: 1.82;
+
+            letter-spacing: -0.006em;
+        }
+
+        .content > p {
+            margin:
+                0
+                0
+                1.5em;
+        }
+
+        .content > p:first-child::first-letter {
+            float: left;
+
+            margin:
+                0.08em
+                0.10em
+                0
+                0;
+
+            color: var(--accent);
+
+            font-family: var(--serif);
+
+            font-size: 4.3em;
+
+            line-height: 0.78;
+
+            font-weight: 700;
+        }
+
+        .content strong {
+            font-weight: 700;
+        }
+
+        .content a {
+            color: var(--accent);
+
+            text-decoration-thickness: 1px;
+
+            text-underline-offset: 3px;
+        }
+
+
+        /* =====================================================
+           H2
+        ===================================================== */
+
+        .content h2 {
+            margin:
+                2.2em
+                0
+                0.65em;
+
+            font-family: var(--sans);
+
+            font-size: 28px;
+
+            line-height: 1.15;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        /* =====================================================
+           CITA
+        ===================================================== */
 
         blockquote {
-            border-left: 4px solid #333;
-            margin: 30px 0;
-            padding-left: 20px;
-            font-size: 20px;
+            position: relative;
+
+            margin:
+                54px
+                -50px;
+
+            padding:
+                36px
+                42px;
+
+            border:
+                1px
+                solid
+                var(--border);
+
+            border-radius: var(--radius-md);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--accent-soft),
+                    transparent
+                );
+
+            box-shadow: var(--shadow-sm);
+
+            font-family: var(--sans);
+
+            font-size:
+                clamp(
+                    23px,
+                    3vw,
+                    31px
+                );
+
+            line-height: 1.3;
+
+            letter-spacing: -0.035em;
+
+            font-weight: 700;
         }
 
-        footer {
-            border-top: 1px solid #ddd;
-            margin-top: 50px;
-            padding-top: 20px;
-            color: #666;
+        blockquote::before {
+            content: "“";
+
+            position: absolute;
+
+            top: -22px;
+            left: 25px;
+
+            color: var(--accent);
+
+            font-family: Georgia, serif;
+
+            font-size: 70px;
+
+            line-height: 1;
         }
+
+
+        /* =====================================================
+           SEPARADOR
+        ===================================================== */
+
+        .article-end {
+            margin-top: 70px;
+
+            padding-top: 28px;
+
+            border-top: 1px solid var(--border);
+        }
+
+
+        /* =====================================================
+           SOURCE CARD
+        ===================================================== */
+
+        .source-card {
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                auto;
+
+            align-items: center;
+
+            gap: 25px;
+
+            padding:
+                25px
+                28px;
+
+            border:
+                1px
+                solid
+                var(--border);
+
+            border-radius: var(--radius-md);
+
+            background: var(--surface);
+
+            box-shadow: var(--shadow-sm);
+        }
+
+        .source-label {
+            margin-bottom: 6px;
+
+            color: var(--text-muted);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+        }
+
+        .source-name {
+            font-size: 16px;
+
+            font-weight: 800;
+        }
+
+        .source-details {
+            margin-top: 5px;
+
+            color: var(--text-muted);
+
+            font-size: 12px;
+        }
+
+        .source-badge {
+            width: 50px;
+            height: 50px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 15px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--accent),
+                    var(--accent-purple)
+                );
+        }
+
+        .source-badge svg {
+            width: 21px;
+            height: 21px;
+        }
+
+
+        /* =====================================================
+           SHARE
+        ===================================================== */
+
+        .share-bar {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            margin:
+                32px
+                0
+                90px;
+
+            padding:
+                16px
+                0;
+
+            border-top:
+                1px
+                solid
+                var(--border);
+
+            border-bottom:
+                1px
+                solid
+                var(--border);
+        }
+
+        .share-title {
+            color: var(--text-muted);
+
+            font-family: var(--sans);
+
+            font-size: 12px;
+
+            font-weight: 750;
+        }
+
+        .share-buttons {
+            display: flex;
+
+            gap: 7px;
+        }
+
+        .share-button {
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+            place-items: center;
+
+            border:
+                1px
+                solid
+                var(--border);
+
+            border-radius: 50%;
+
+            color: var(--text-secondary);
+
+            background: var(--surface);
+
+            cursor: pointer;
+
+            transition:
+                transform .2s ease,
+                color .2s ease,
+                background .2s ease;
+        }
+
+        .share-button:hover {
+            transform: translateY(-2px);
+
+            color: var(--accent);
+
+            background:
+                var(--surface-solid);
+        }
+
+        .share-button:focus-visible {
+            outline:
+                3px
+                solid
+                var(--accent-soft);
+
+            outline-offset: 3px;
+        }
+
+        .share-button svg {
+            width: 16px;
+            height: 16px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .site-footer {
+            margin-top: 80px;
+
+            padding:
+                60px
+                20px
+                45px;
+
+            border-top:
+                1px
+                solid
+                var(--border);
+
+            background:
+                var(--surface-soft);
+        }
+
+        .footer-inner {
+            width: min(
+                100%,
+                var(--wide-width)
+            );
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 40px;
+        }
+
+        .footer-brand {
+            max-width: 370px;
+        }
+
+        .footer-brand .brand {
+            margin-bottom: 15px;
+        }
+
+        .footer-description {
+            color: var(--text-muted);
+
+            font-size: 13px;
+
+            line-height: 1.65;
+        }
+
+        .footer-meta {
+            color: var(--text-muted);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+            text-align: right;
+        }
+
+
+        /* =====================================================
+           TOAST
+        ===================================================== */
+
+        .toast {
+            position: fixed;
+            z-index: 5000;
+
+            left: 50%;
+            bottom: 25px;
+
+            transform:
+                translate(-50%, 25px);
+
+            padding:
+                11px
+                17px;
+
+            border:
+                1px
+                solid
+                var(--border);
+
+            border-radius: 999px;
+
+            color: var(--text);
+
+            background:
+                var(--surface-solid);
+
+            box-shadow: var(--shadow-md);
+
+            font-size: 13px;
+            font-weight: 650;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition:
+                opacity .25s ease,
+                transform .25s ease;
+        }
+
+        .toast.visible {
+            opacity: 1;
+
+            transform:
+                translate(-50%, 0);
+        }
+
+
+        /* =====================================================
+           ANIMACIONES DE ENTRADA
+        ===================================================== */
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+        .hero > * {
+            animation:
+                fadeUp
+                .7s
+                cubic-bezier(.2,.8,.2,1)
+                both;
+        }
+
+        .hero .eyebrow {
+            animation-delay: .03s;
+        }
+
+        .hero h1 {
+            animation-delay: .10s;
+        }
+
+        .hero .subtitle {
+            animation-delay: .18s;
+        }
+
+        .hero .article-meta {
+            animation-delay: .26s;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE TABLET
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .hero {
+                padding-top: 65px;
+            }
+
+            blockquote {
+                margin:
+                    45px
+                    0;
+            }
+
+            .article-layout {
+                margin-top: 58px;
+            }
+        }
+
+
+        /* =====================================================
+           RESPONSIVE MÓVIL
+        ===================================================== */
+
+        @media (max-width: 640px) {
+
+            .nav {
+                width:
+                    calc(100% - 28px);
+
+                min-height: 62px;
+            }
+
+            .brand-name {
+                font-size: 14px;
+            }
+
+            .hero {
+                width:
+                    calc(100% - 32px);
+
+                padding:
+                    52px
+                    0
+                    35px;
+            }
+
+            .hero-visual {
+                width:
+                    calc(100% - 24px);
+            }
+
+            h1 {
+                font-size:
+                    clamp(
+                        40px,
+                        12vw,
+                        58px
+                    );
+
+                letter-spacing: -.06em;
+            }
+
+            .subtitle {
+                margin-top: 22px;
+
+                font-size: 18px;
+            }
+
+            .article-meta {
+                align-items: flex-start;
+
+                gap: 13px;
+            }
+
+            .meta-divider {
+                display: none;
+            }
+
+            .reading-time {
+                margin-left: 0;
+            }
+
+            .image-frame {
+                border-radius: 20px;
+            }
+
+            .image-frame img {
+                aspect-ratio: 1 / 1;
+            }
+
+            .article-layout {
+                width:
+                    calc(100% - 32px);
+
+                margin-top: 45px;
+            }
+
+            .content {
+                font-size: 18px;
+
+                line-height: 1.76;
+            }
+
+            .content > p:first-child::first-letter {
+                font-size: 3.8em;
+            }
+
+            blockquote {
+                margin:
+                    42px
+                    0;
+
+                padding:
+                    32px
+                    25px;
+
+                font-size: 23px;
+            }
+
+            .source-card {
+                grid-template-columns:
+                    1fr;
+
+                padding:
+                    22px;
+            }
+
+            .source-badge {
+                display: none;
+            }
+
+            .share-bar {
+                align-items: flex-start;
+
+                flex-direction: column;
+
+                margin-bottom: 60px;
+            }
+
+            .site-footer {
+                padding:
+                    45px
+                    16px
+                    35px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .footer-meta {
+                text-align: left;
+            }
+        }
+
+
+        /* =====================================================
+           REDUCIR MOVIMIENTO
+        ===================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
     </style>
 </head>
 
+
 <body>
 
-<article>
+    <!-- Barra de progreso -->
+    <div
+        class="progress-bar"
+        id="progressBar"
+        aria-hidden="true"
+    ></div>
 
-    <header>
 
-        <div class="source">
-            CyberSecure News
-        </div>
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
 
-        <div class="type">
-            Noticias
-        </div>
+    <header class="site-header">
 
-        <h1>
-            Una nueva campaña de phishing utiliza falsas alertas de seguridad
-            para atacar a empresas
-        </h1>
+        <nav
+            class="nav"
+            aria-label="Navegación principal"
+        >
 
-        <p class="subtitle">
-            Investigadores han detectado una campaña de phishing que utiliza
-            falsas alertas de seguridad para engañar a empleados y obtener
-            sus credenciales corporativas.
-        </p>
+            <a
+                class="brand"
+                href="#"
+                aria-label="CyberSecure News"
+            >
 
-        <div class="metadata">
+                <span
+                    class="brand-mark"
+                    aria-hidden="true"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/>
+                        <path d="M9.5 12l1.7 1.7 3.5-4"/>
+                    </svg>
+                </span>
 
-            <span class="author">
-                Por Clara Fernández
-            </span>
+                <span class="brand-name">
+                    CyberSecure News
+                </span>
 
-            <time datetime="2026-09-02T08:45:00+02:00">
-                2 de septiembre de 2026, 08:45
-            </time>
+            </a>
 
-        </div>
+
+            <div class="nav-actions">
+
+                <button
+                    class="icon-button"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Cambiar tema"
+                    title="Cambiar tema"
+                >
+
+                    <svg
+                        id="themeIcon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2"/>
+                        <path d="M12 20v2"/>
+                        <path d="M4.93 4.93l1.41 1.41"/>
+                        <path d="M17.66 17.66l1.41 1.41"/>
+                        <path d="M2 12h2"/>
+                        <path d="M20 12h2"/>
+                        <path d="M4.93 19.07l1.41-1.41"/>
+                        <path d="M17.66 6.34l1.41-1.41"/>
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </nav>
 
     </header>
 
-    <figure>
-        <img
-            src="imagen-ciberseguridad.svg"
-            alt="Ilustración sobre ciberseguridad y ataques de phishing"
+
+    <!-- =========================================================
+         CONTENIDO PRINCIPAL
+    ========================================================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section
+            class="hero"
+            aria-labelledby="article-title"
         >
 
-        <figcaption>
-            Los atacantes utilizan mensajes que simulan proceder de los
-            equipos de seguridad de las organizaciones.
-        </figcaption>
-    </figure>
+            <div class="eyebrow">
 
-    <div class="content">
+                <span class="category">
 
-        <p>
-            Investigadores especializados en ciberseguridad han identificado
-            una nueva campaña de phishing dirigida principalmente a empleados
-            de empresas de tamaño medio. Los mensajes utilizados en la
-            campaña simulan proceder del departamento de seguridad de las
-            organizaciones afectadas.
-        </p>
+                    <span
+                        class="category-dot"
+                        aria-hidden="true"
+                    ></span>
 
-        <p>
-            El correo electrónico informa al destinatario de que se ha
-            detectado una actividad sospechosa en su cuenta corporativa.
-            A continuación, solicita al usuario que confirme su identidad
-            mediante un enlace incluido en el propio mensaje.
-        </p>
+                    Ciberseguridad
 
-        <p>
-            El enlace conduce a una página que reproduce el aspecto de un
-            portal corporativo de inicio de sesión. Los investigadores
-            señalan que la página está diseñada para recopilar las
-            credenciales introducidas por las víctimas.
-        </p>
+                </span>
 
-        <p>
-            La campaña destaca por utilizar información pública de las
-            organizaciones objetivo para personalizar los mensajes. Los
-            correos pueden incluir el nombre de la empresa, referencias a
-            servicios utilizados por los empleados y supuestas incidencias
-            relacionadas con cuentas concretas.
-        </p>
+                <span
+                    class="eyebrow-separator"
+                    aria-hidden="true"
+                >
+                    /
+                </span>
 
-        <blockquote>
-            "La principal diferencia respecto a campañas anteriores es el
-            nivel de personalización de los mensajes."
-        </blockquote>
+                <span class="article-type">
+                    Noticias
+                </span>
 
-        <p>
-            Los expertos recomiendan a las organizaciones mantener activada
-            la autenticación multifactor, formar periódicamente a sus
-            empleados y comprobar cuidadosamente cualquier solicitud
-            inesperada de credenciales.
-        </p>
+            </div>
 
-        <p>
-            También aconsejan que los equipos de seguridad revisen los
-            registros de autenticación y establezcan mecanismos que permitan
-            detectar accesos anómalos después de que un usuario haya
-            interactuado con un mensaje sospechoso.
-        </p>
 
-        <p>
-            Por el momento no se ha atribuido públicamente la campaña a un
-            grupo concreto. Los investigadores continúan analizando los
-            indicadores técnicos asociados a la infraestructura utilizada
-            por los atacantes.
-        </p>
+            <h1 id="article-title">
+                Una nueva campaña de phishing utiliza falsas alertas de seguridad para atacar a empresas
+            </h1>
 
-    </div>
 
-    <footer>
+            <p class="subtitle">
+                Investigadores han detectado una campaña de phishing que utiliza falsas alertas de seguridad para engañar a empleados y obtener sus credenciales corporativas.
+            </p>
 
-        <p>
-            Fuente: <strong>CyberSecure News</strong>
-        </p>
 
-        <p>
-            Categoría: <strong>Ciberseguridad</strong>
-        </p>
+            <!-- Metadata -->
 
-        <p>
-            Publicado el 2 de septiembre de 2026 a las 08:45.
-        </p>
+            <div class="article-meta">
+
+                <div class="author">
+
+                    <div
+                        class="author-avatar"
+                        aria-hidden="true"
+                    >
+                        AC
+                    </div>
+
+                    <div class="author-info">
+
+                        <span class="author-name">
+                            Antonio Casamitjana
+                        </span>
+
+                        <span class="author-role">
+                            Redacción · CyberSecure News
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <span
+                    class="meta-divider"
+                    aria-hidden="true"
+                ></span>
+
+
+                <div class="published">
+
+                    <span>
+                        Publicado
+                    </span>
+
+                    <strong>
+                        <time
+                            datetime="2026-09-02T08:45:00+02:00"
+                        >
+                            2 de septiembre de 2026, 08:45
+                        </time>
+                    </strong>
+
+                </div>
+
+
+                <span class="reading-time">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M12 7v5l3 2"/>
+                    </svg>
+
+                    4 min de lectura
+
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             IMAGEN PRINCIPAL
+        ====================================================== -->
+
+        <section
+            class="hero-visual"
+            aria-label="Imagen principal"
+        >
+
+            <figure>
+
+                <div class="image-frame">
+
+                    <img
+                        src="imagen-ciberseguridad.svg"
+                        alt="Ilustración sobre ciberseguridad y ataques de phishing"
+                        loading="eager"
+                    >
+
+                </div>
+
+                <figcaption>
+                    Los atacantes utilizan mensajes que simulan proceder de los equipos de seguridad de las organizaciones.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- =====================================================
+             ARTÍCULO
+        ====================================================== -->
+
+        <div class="article-layout">
+
+            <article
+                class="content"
+                id="article-content"
+            >
+
+                <p>
+                    Investigadores especializados en ciberseguridad han identificado una nueva campaña de phishing dirigida principalmente a empleados de empresas de tamaño medio. Los mensajes utilizados en la campaña simulan proceder del departamento de seguridad de las organizaciones afectadas.
+                </p>
+
+
+                <p>
+                    El correo electrónico informa al destinatario de que se ha detectado una actividad sospechosa en su cuenta corporativa. A continuación, solicita al usuario que confirme su identidad mediante un enlace incluido en el propio mensaje.
+                </p>
+
+
+                <p>
+                    El enlace conduce a una página que reproduce el aspecto de un portal corporativo de inicio de sesión. Los investigadores señalan que la página está diseñada para recopilar las credenciales introducidas por las víctimas.
+                </p>
+
+
+                <p>
+                    La campaña destaca por utilizar información pública de las organizaciones objetivo para personalizar los mensajes. Los correos pueden incluir el nombre de la empresa, referencias a servicios utilizados por los empleados y supuestas incidencias relacionadas con cuentas concretas.
+                </p>
+
+
+                <blockquote>
+                    "La principal diferencia respecto a campañas anteriores es el nivel de personalización de los mensajes."
+                </blockquote>
+
+
+                <p>
+                    Los expertos recomiendan a las organizaciones mantener activada la autenticación multifactor, formar periódicamente a sus empleados y comprobar cuidadosamente cualquier solicitud inesperada de credenciales.
+                </p>
+
+
+                <p>
+                    También aconsejan que los equipos de seguridad revisen los registros de autenticación y establezcan mecanismos que permitan detectar accesos anómalos después de que un usuario haya interactuado con un mensaje sospechoso.
+                </p>
+
+
+                <p>
+                    Por el momento no se ha atribuido públicamente la campaña a un grupo concreto. Los investigadores continúan analizando los indicadores técnicos asociados a la infraestructura utilizada por los atacantes.
+                </p>
+
+
+                <!-- =================================================
+                     FINAL DEL ARTÍCULO
+                ================================================== -->
+
+                <div class="article-end">
+
+                    <div class="source-card">
+
+                        <div>
+
+                            <div class="source-label">
+                                Publicado por
+                            </div>
+
+                            <div class="source-name">
+                                CyberSecure News
+                            </div>
+
+                            <div class="source-details">
+                                Antonio Casamitjana · Ciberseguridad
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="source-badge"
+                            aria-hidden="true"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/>
+                                <path d="M9.5 12l1.7 1.7 3.5-4"/>
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Compartir -->
+
+                    <div
+                        class="share-bar"
+                        aria-label="Compartir artículo"
+                    >
+
+                        <span class="share-title">
+                            Compartir artículo
+                        </span>
+
+                        <div class="share-buttons">
+
+                            <!-- X -->
+
+                            <button
+                                class="share-button"
+                                type="button"
+                                data-share="x"
+                                aria-label="Compartir en X"
+                                title="Compartir en X"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.84L18.9 2zm-1.1 17.8h1.73L8.27 4.07H6.41L17.8 19.8z"/>
+                                </svg>
+
+                            </button>
+
+
+                            <!-- LinkedIn -->
+
+                            <button
+                                class="share-button"
+                                type="button"
+                                data-share="linkedin"
+                                aria-label="Compartir en LinkedIn"
+                                title="Compartir en LinkedIn"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M6.5 8.2H3V21h3.5V8.2zM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3zM21 13.6c0-3.82-2.04-5.6-4.76-5.6-2.2 0-3.18 1.2-3.73 2.04V8.2H9V21h3.51v-6.33c0-1.67.32-3.29 2.39-3.29 2.04 0 2.06 1.91 2.06 3.4V21H21v-7.4z"/>
+                                </svg>
+
+                            </button>
+
+
+                            <!-- Copiar -->
+
+                            <button
+                                class="share-button"
+                                id="copyLink"
+                                type="button"
+                                aria-label="Copiar enlace"
+                                title="Copiar enlace"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.14 1.14"/>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <a
+                    class="brand"
+                    href="#"
+                    aria-label="CyberSecure News"
+                >
+
+                    <span
+                        class="brand-mark"
+                        aria-hidden="true"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/>
+                            <path d="M9.5 12l1.7 1.7 3.5-4"/>
+                        </svg>
+
+                    </span>
+
+                    <span>
+                        CyberSecure News
+                    </span>
+
+                </a>
+
+
+                <div class="footer-description">
+                    Información, análisis y actualidad sobre ciberseguridad,
+                    amenazas digitales y protección empresarial.
+                </div>
+
+            </div>
+
+
+            <div class="footer-meta">
+
+                <div>
+                    Fuente:
+                    <strong>CyberSecure News</strong>
+                </div>
+
+                <div>
+                    Autor:
+                    <strong>Antonio Casamitjana</strong>
+                </div>
+
+                <div>
+                    Publicado el 2 de septiembre de 2026 a las 08:45.
+                </div>
+
+                <div>
+                    Última actualización:
+                    2 de septiembre de 2026 a las 09:20.
+                </div>
+
+            </div>
+
+        </div>
 
     </footer>
 
-</article>
+
+    <!-- Toast -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+        Enlace copiado
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        /* =====================================================
+           TEMA
+        ===================================================== */
+
+        const html = document.documentElement;
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.getElementById("themeIcon");
+
+        const savedTheme =
+            localStorage.getItem("cybersecure-theme");
+
+        if (savedTheme) {
+            html.dataset.theme = savedTheme;
+        } else if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+            html.dataset.theme = "dark";
+        }
+
+
+        function updateThemeIcon() {
+
+            const dark =
+                html.dataset.theme === "dark";
+
+            themeIcon.innerHTML = dark
+
+                ? `
+                    <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3
+                    6.7 6.7 0 0 0 21 12.8z"/>
+                `
+
+                : `
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="M4.93 4.93l1.41 1.41"/>
+                    <path d="M17.66 17.66l1.41 1.41"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="M4.93 19.07l1.41-1.41"/>
+                    <path d="M17.66 6.34l1.41-1.41"/>
+                `;
+
+            themeToggle.setAttribute(
+                "aria-label",
+                dark
+                    ? "Activar modo claro"
+                    : "Activar modo oscuro"
+            );
+        }
+
+
+        updateThemeIcon();
+
+
+        themeToggle.addEventListener(
+            "click",
+            () => {
+
+                const current =
+                    html.dataset.theme === "dark"
+                        ? "dark"
+                        : "light";
+
+                const next =
+                    current === "dark"
+                        ? "light"
+                        : "dark";
+
+                html.dataset.theme = next;
+
+                localStorage.setItem(
+                    "cybersecure-theme",
+                    next
+                );
+
+                updateThemeIcon();
+            }
+        );
+
+
+        /* =====================================================
+           PROGRESO DE LECTURA
+        ===================================================== */
+
+        const progressBar =
+            document.getElementById("progressBar");
+
+        const article =
+            document.getElementById("article-content");
+
+
+        function updateReadingProgress() {
+
+            const articleTop =
+                article.getBoundingClientRect().top +
+                window.scrollY;
+
+            const articleHeight =
+                article.offsetHeight;
+
+            const viewportHeight =
+                window.innerHeight;
+
+            const scrollPosition =
+                window.scrollY;
+
+            const progress =
+                (
+                    (scrollPosition - articleTop) /
+                    (articleHeight - viewportHeight)
+                ) * 100;
+
+            progressBar.style.width =
+                `${Math.min(
+                    100,
+                    Math.max(0, progress)
+                )}%`;
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateReadingProgress,
+            { passive: true }
+        );
+
+        window.addEventListener(
+            "resize",
+            updateReadingProgress
+        );
+
+        updateReadingProgress();
+
+
+        /* =====================================================
+           TOAST
+        ===================================================== */
+
+        const toast =
+            document.getElementById("toast");
+
+        let toastTimer;
+
+
+        function showToast(message) {
+
+            toast.textContent = message;
+
+            toast.classList.add("visible");
+
+            clearTimeout(toastTimer);
+
+            toastTimer =
+                setTimeout(
+                    () => {
+                        toast.classList.remove("visible");
+                    },
+                    2200
+                );
+        }
+
+
+        /* =====================================================
+           COMPARTIR
+        ===================================================== */
+
+        const pageTitle =
+            document.title;
+
+        const pageUrl =
+            window.location.href;
+
+
+        document
+            .querySelectorAll("[data-share]")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const type =
+                            button.dataset.share;
+
+                        let url = "";
+
+
+                        if (type === "x") {
+
+                            url =
+                                "https://twitter.com/intent/tweet?text="
+                                +
+                                encodeURIComponent(pageTitle)
+                                +
+                                "&url="
+                                +
+                                encodeURIComponent(pageUrl);
+
+                        }
+
+
+                        if (type === "linkedin") {
+
+                            url =
+                                "https://www.linkedin.com/sharing/share-offsite/?url="
+                                +
+                                encodeURIComponent(pageUrl);
+
+                        }
+
+
+                        if (url) {
+
+                            window.open(
+                                url,
+                                "_blank",
+                                "noopener,noreferrer,width=700,height=600"
+                            );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           COPIAR ENLACE
+        ===================================================== */
+
+        const copyLink =
+            document.getElementById("copyLink");
+
+
+        copyLink.addEventListener(
+            "click",
+            async () => {
+
+                try {
+
+                    await navigator.clipboard.writeText(
+                        pageUrl
+                    );
+
+                    showToast(
+                        "Enlace copiado al portapapeles"
+                    );
+
+                } catch (error) {
+
+                    showToast(
+                        "No se pudo copiar el enlace"
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           TECLA ESC PARA FOCUS / ETC.
+        ===================================================== */
+
+        document.addEventListener(
+            "keydown",
+            event => {
+
+                if (
+                    event.key === "/" &&
+                    document.activeElement.tagName !== "INPUT" &&
+                    document.activeElement.tagName !== "TEXTAREA"
+                ) {
+                    event.preventDefault();
+                }
+
+            }
+        );
+
+    </script>
 
 </body>
 </html>
